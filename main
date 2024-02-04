@@ -1,0 +1,16 @@
+import os
+
+DOWNLOAD_PATH = "{YOUR_DOWNLOAD_PATH}"
+URLS_FILE_PATH = "youtubeURLs.txt"
+
+#API_URL = "youtubelink"
+
+HEADERS = {
+    "X-RapidAPI-Key": "{YOUR_RAPID_API_KEY}",
+    "X-RapidAPI-Host": "youtube-mp36.p.rapidapi.com"
+}
+
+def read_file_lines(file_path):
+    with open(file_path, 'r') as file:
+        lines = file.readlines()
+    return lines
